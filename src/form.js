@@ -33,22 +33,28 @@ const Form =() =>{
     };
     return(
         <div className="main">
-            <div className="parent">
+          <div className="parent">
+          <h2>Login</h2>
            <form onSubmit={handleSubmit} className="formstyle">
-                <h4>Login</h4>
-                <div>
+                <div className="field">
                 <label>Username:</label>
                 <input type="text" value={username} onChange={(e)=>setUsername(e.target.value)} required/>
                 </div>
 
-                
+                <div className="field">
                 <label>Email:</label>
                 <input type="email" value={email} onChange={(e)=>setemail(e.target.value)} required/><br/>
-                <label>Phone:</label><br></br>
+                </div>
+
+                <div className="field">
+                <label>Phone:</label>
                 <input type="phone" value={phone} onChange={handlePhone} required/><br/>
+                </div>
+              <div className="field">
                 <label>password:</label>
                 <input type="password" value={password} onChange={(e)=>setPassword(e.target.value)} required/><br/>
-                <button type="submit">Submit</button>
+                </div>
+                <button  type="submit" style={{marginLeft:"100px",marginTop:"10px"}}>Submit</button>
             </form>
            
             </div>
