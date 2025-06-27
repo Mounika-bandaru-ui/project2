@@ -48,7 +48,7 @@ const Form =() =>{
 
                 <div className="field">
                 <label>Phone:</label>
-                <input type="phone" value={phone} onChange={handlePhone} required/><br/>
+                <input type="phone" value={phone} onChange={(e)=>setPhone(e.target.value)} required/><br/>
                 </div>
               <div className="field">
                 <label>password:</label>
