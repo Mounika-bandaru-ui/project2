@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 // import './App.css';
 import { useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.css';
+import "bootstrap"; 
 
 function App() {
   const [user,setUser] =useState("");
