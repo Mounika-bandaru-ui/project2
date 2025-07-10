@@ -20,7 +20,7 @@ function App() {
     setUsers([...users,value]);
     setUser("");
    };
-  // console.log(users);
+   console.log(users);
 
 
    const handleDelete = (index)=>{
